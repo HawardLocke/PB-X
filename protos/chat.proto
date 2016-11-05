@@ -2,33 +2,22 @@ syntax = "proto3";
 
 package LiteServer;
 
-message ExtraInfo
-{
-	int32 number = 1;
-}
 
-message Login
-{
-	string name = 1;
-	string password = 2;
-	repeated ExtraInfo infos = 3;
-}
-
-message TestMsg1
+message Test1Msg1
 {
 	string text = 1;
 	int32 number = 2;
 	int64 bignumber = 3;
 }
 
-message TestMsg2
+message Test1Msg2
 {
 	string text = 1;
 	int32 number = 2;
 	int64 bignumber = 3;
 }
 
-message TestMsg3
+message Test1Msg3
 {
 	string text = 1;
 	int32 number = 2;
