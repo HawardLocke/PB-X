@@ -7,8 +7,8 @@ Remember to add reference google.protobf.dll to your c# project.
 ----------
 Lua
 1. Make sure you have installed Python.
-2. Install setuptools£º
-command line "python ez_setup.py", this will download and install setuptools-28.7.1.zip.
-3. Install protobuf/python/setup.py£º
-command line "python setup.py install".
+2. Install setuptools
+use command line "python ez_setup.py", this will download and install setuptools-28.7.1.zip.
+3. Install protobuf/python/setup.py
+use command line "python setup.py install".
 ----------
