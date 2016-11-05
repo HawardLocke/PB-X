@@ -1,2 +1,2 @@
 # ProtocolTool
-整合C#、lua、python，使用Google Protobuf生成协议。
+Tools to make easy use of protobuf, support c#, lua, javascript, python.
