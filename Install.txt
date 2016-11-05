@@ -1,0 +1,14 @@
+dependencies下有依赖的工具
+
+1. cs
+没有额外的安装，记得在你的c#项目中引用google.protobf.dll。
+
+2. lua
+使用python27，
+先安装setuptools：
+  方法1：command line : python ez_setup.py（这个会自动下载setuptools-28.7.1，并且自动安装）
+  方法2：直接解压setuptools-28.7.1，到里面找到setup.py，command line : python setup.py install
+再安装protobuf/python/setup.py：
+  command line : python setup.py install
+安装完毕！
+下面就可以生成lua：python tolua.py
