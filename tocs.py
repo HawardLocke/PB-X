@@ -9,7 +9,7 @@ import shutil
 import settings
 
 
-def gen_cs(src_path, dst_path):
+def gen_files(src_path, dst_path):
 	abs_src_path = os.path.abspath('.') + src_path
 	abs_dst_path = os.path.abspath('.') + dst_path
 	if os.path.exists(abs_dst_path):
@@ -38,7 +38,7 @@ def gen_cs(src_path, dst_path):
 pass
 
 
-def copy_cs(src_path,  dst_path):
+def copy_files(src_path,  dst_path):
 	abs_src_path = os.path.abspath('.') + src_path
 	abs_dst_path = os.path.abspath('.') + dst_path
 	for file in os.listdir(abs_src_path):
@@ -55,9 +55,12 @@ src = '/protos/'
 gen_tmp = '/auto_gen/cs/'
 
 print('\n-----Begin Gen CS-----')
-gen_cs(src, gen_tmp)
+gen_files(src, gen_tmp)
 print('-----End Gen CS-----')
-print('\n')
-print('-----Begin Copy-----')
-copy_cs(gen_tmp, settings.CS_DEST_DIR)
-print('-----End Copy-----\n')
+if settings.AUTO_COPY_FILE:
+	print('-----Begin Copy-----')
+	copy_files(gen_tmp, settings.CS_DEST_DIR)
+	print('-----End Copy-----\n')
+pass
+
+

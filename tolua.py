@@ -13,7 +13,7 @@ src = '/protos/'
 gen_tmp = '/auto_gen/lua/'
 
 
-def gen_lua(src_path, dst_path):
+def gen_files(src_path, dst_path):
 	abs_src_path = os.path.abspath('.') + src_path
 	abs_dst_path = os.path.abspath('.') + dst_path
 	if os.path.exists(abs_dst_path):
@@ -59,9 +59,10 @@ pass
 
 
 print('\n-----Begin Gen Lua-----')
-gen_lua(src, gen_tmp)
+gen_files(src, gen_tmp)
 print('-----End Gen Lua-----')
-print('\n')
-print('-----Begin Copy-----')
-copy_cs(os.path.abspath('.') + gen_tmp, os.path.abspath('.') + settings.LUA_DEST_DIR)
-print('-----End Copy-----\n')
+if settings.AUTO_COPY_FILE:
+	print('-----Begin Copy-----')
+	copy_cs(os.path.abspath('.') + gen_tmp, os.path.abspath('.') + settings.LUA_DEST_DIR)
+	print('-----End Copy-----\n')
+pass
