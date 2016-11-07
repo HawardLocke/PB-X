@@ -8,6 +8,9 @@ import string
 import shutil
 import settings
 
+src = '/protos/'
+gen_tmp = '/auto_gen/cs/'
+
 
 def gen_files(src_path, dst_path):
 	abs_src_path = os.path.abspath('.') + src_path
@@ -51,8 +54,6 @@ def copy_files(src_path,  dst_path):
 pass
 
 
-src = '/protos/'
-gen_tmp = '/auto_gen/cs/'
 
 print('\n-----Begin Gen CS-----')
 gen_files(src, gen_tmp)

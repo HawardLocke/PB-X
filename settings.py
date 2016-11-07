@@ -13,3 +13,9 @@ CS_DEST_DIR = '/../LiteServer/LiteServer/Source/Protobuf/'
 
 # Generated lua files will be copied to this folder.
 LUA_DEST_DIR = '/../uLab/uLab/Assets/Lua/protocol/'
+
+# Generated javascript files will be copied to this folder.
+JS_DEST_DIR = ''
+
+# Generated python files will be copied to this folder.
+PY_DEST_DIR = ''

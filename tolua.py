@@ -40,7 +40,7 @@ def gen_files(src_path, dst_path):
 	pass
 	os.chdir('./../')
 	msg_id_str += '\n};\n'
-	open(abs_dst_path+'MsgID.lua', 'wb').write(msg_id_str)
+	open(abs_dst_path+'MsgID.js', 'wb').write(msg_id_str)
 pass
 
 
