@@ -6,7 +6,7 @@ MAX_ID_COUNT_PER_FILE = 1000
 NAME_SPACE = 'PBX'
 
 # Auto copy generated file to dest folders.
-AUTO_COPY_FILE = False
+AUTO_COPY_FILE = True
 
 # Generated c# files will be copied to this folder.
 CS_DEST_DIR = '/../LiteServer/LiteServer/Source/Protobuf/'
