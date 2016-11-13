@@ -1,36 +1,38 @@
 syntax = "proto3";
 
-package LiteServer;
+package Lite;
 
-message ExtraInfo
+message LoginRoleInfo
 {
-	int32 number = 1;
+	int32 index = 1;
+	int64 id = 2;
+	string name = 3;
+	int32 career = 4;
+	int32 level = 5;
 }
 
-message Login
+message LoginRequest
 {
-	string name = 1;
+	string account = 1;
 	string password = 2;
-	repeated ExtraInfo infos = 3;
 }
 
-message TestMsg1
+message LoginResponse
 {
-	string text = 1;
-	int32 number = 2;
-	int64 bignumber = 3;
+	int32 result = 1;
 }
 
-message TestMsg2
+message EnterGameRequest
 {
-	string text = 1;
-	int32 number = 2;
-	int64 bignumber = 3;
+	int32 roleIndex = 1;
 }
 
-message TestMsg3
+message EnterGameResponse
 {
-	string text = 1;
-	int32 number = 2;
-	int64 bignumber = 3;
+	int32 result = 1;
+}
+
+message EnterSceneOk
+{
+	
 }

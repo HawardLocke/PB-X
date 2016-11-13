@@ -1,25 +1,16 @@
 syntax = "proto3";
 
-package LiteServer;
+package Lite;
 
 
-message Test1Msg1
+message sendMsg
 {
 	string text = 1;
-	int32 number = 2;
-	int64 bignumber = 3;
 }
 
-message Test1Msg2
+message recvMsg
 {
-	string text = 1;
-	int32 number = 2;
-	int64 bignumber = 3;
-}
-
-message Test1Msg3
-{
-	string text = 1;
-	int32 number = 2;
-	int64 bignumber = 3;
+	int64 roleId = 1;
+	string name = 2;
+	string text = 3;
 }

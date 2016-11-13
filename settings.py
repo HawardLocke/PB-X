@@ -9,7 +9,7 @@ NAME_SPACE = 'PBX'
 AUTO_COPY_FILE = True
 
 # Generated c# files will be copied to this folder.
-CS_DEST_DIR = '/../LiteServer/LiteServer/Source/Protobuf/'
+CS_DEST_DIR = '/../LiteServer/LiteServer/Source/Logic/Protocol/'
 
 # Generated lua files will be copied to this folder.
 LUA_DEST_DIR = '/../uLab/uLab/Assets/Lua/protocol/'
