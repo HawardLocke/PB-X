@@ -3,10 +3,59 @@ syntax = "proto3";
 package Lite;
 
 
-message MoveRequest
+message gcPlayerInfo
+{
+	int64 playerGuid = 1;
+	string name = 2;
+	int32 career = 3;
+	int32 level = 4;
+}
+
+
+message gcEnterScene
+{
+	int32 sceneId = 1;
+}
+
+message cgEnterSceneDone
+{
+	
+}
+
+message cgExitScene
+{
+	int32 roleIndex = 1;
+}
+
+message gcExitSceneRet
+{
+	int32 result = 1;
+}
+
+message gcOtherEnterScene
+{
+	gcPlayerInfo playerInfo = 1;
+}
+
+message gcNearbyPlayerInfo
+{
+	repeated gcPlayerInfo playerInfoList = 1;
+}
+
+message cgMoveTo
 {
 	float x = 1;
 	float y = 2;
 	float z = 3;
 }
+
+message gcMoveTo
+{
+	float x = 1;
+	float y = 2;
+}
+
+
+
+
 
