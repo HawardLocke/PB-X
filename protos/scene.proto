@@ -9,6 +9,8 @@ message gcPlayerInfo
 	string name = 2;
 	int32 career = 3;
 	int32 level = 4;
+	float x = 5;
+	float y = 6;
 }
 
 
