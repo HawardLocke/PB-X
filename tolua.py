@@ -24,6 +24,8 @@ def gen_files(src_path, dst_path):
 	file_index = 0
 	os.chdir('.%s' % src)
 	for file_name in os.listdir(abs_src_path):
+		if file_name.find('.proto') <= 0:
+			continue
 		print('  %s' % file_name)
 		os.system('..\\protoc.exe --plugin=protoc-gen-lua="%s/../protoc-gen-lua/plugin/protoc-gen-lua.bat" --lua_out=../%s %s' % (os.path.abspath('.'), dst_path, file_name))
 		file_index = file_index + 1

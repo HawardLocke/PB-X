@@ -1,4 +1,4 @@
-# ProtocolTool
+# Protobuf Tool
 Tools provide easy use of protobuf, supporting c#, lua, javascript, python.
 
 Folders
@@ -12,14 +12,11 @@ C#
 Remember to add reference google.protobf.dll to your c# project.
 
 Lua
-1. Make sure you have installed Python.
-2. Install setuptools
-use command line "python ez_setup.py", this will download and install setuptools-28.7.1.zip.
-3. Install protobuf/python/setup.py
-use command line "python setup.py install".
+1. Install pthon setuptools
+2. Go to protobuf/python, command line "python setup.py install".
 
 Javascript
-to be continued.
+to do
 
 Python
-to be continued.
+to do
