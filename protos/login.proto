@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package Lite;
+package Lite.Protocol;
 
 message gcLoginRoleInfo
 {
