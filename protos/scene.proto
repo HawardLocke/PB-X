@@ -5,7 +5,7 @@ package Lite.Protocol;
 
 message gcPlayerInfo
 {
-	int64 playerGuid = 1;
+	int32 playerGuid = 1;
 	string name = 2;
 	int32 career = 3;
 	int32 level = 4;
@@ -36,7 +36,8 @@ message gcExitSceneRet
 
 message gcOtherEnterScene
 {
-	gcPlayerInfo playerInfo = 1;
+	int32 ret = 1;
+	int32 guid = 2;
 }
 
 message gcNearbyPlayerInfo

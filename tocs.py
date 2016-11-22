@@ -1,5 +1,5 @@
 
-# protobuff gen csharp
+# protobuf gen csharp
 
 import os
 import os.path
