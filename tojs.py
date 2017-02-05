@@ -40,7 +40,7 @@ def gen_file(src_path, dst_path):
 				msg_id_str += '\t%s : %d,\n' % (id_name, id_index)
 	pass
 	os.chdir('./../')
-	msg_id_str += '\n};\n'
+	msg_id_str += '\n};\n\nmodule.exports = %s.MsgID;\n' % settings.NAME_SPACE;
 	open(abs_dst_path+'MsgID.js', 'wb').write(msg_id_str)
 pass
 

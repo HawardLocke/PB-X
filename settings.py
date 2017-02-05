@@ -3,15 +3,15 @@
 MAX_ID_COUNT_PER_FILE = 1000
 
 # Name space / module of MsgID.
-NAME_SPACE = 'PBX'
+NAME_SPACE = 'Protocol'
 # Name space of c# MsgID.
-NAME_SPACE_CS = 'Lite'
+NAME_SPACE_CS = 'Protocol'
 
 # Auto copy generated file to dest folders.
 AUTO_COPY_FILE = True
 
 # use protobuf-net or only use google.protobuf to generate cs files.
-USE_PROTOBUF_NET = True
+USE_PROTOBUF_NET = False
 
 # Generated c# files will be copied to this folder.
 CS_DEST_DIR = ['/../LiteServer/LiteServer/Source/Logic/Protocol/auto_gen/']#, '/../uLab/uLab/Assets/Scripts/Network/Protocol/auto_gen/']

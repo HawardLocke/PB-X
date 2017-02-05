@@ -1,43 +1,35 @@
 syntax = "proto3";
 
-package Lite.Protocol;
+package Protocol;
 
-message gcLoginRoleInfo
-{
-	int32 index = 1;
-	int64 id = 2;
-	string name = 3;
-	int32 career = 4;
-	int32 level = 5;
-}
 
-message cgLogin
+message csLogin
 {
 	string account = 1;
 	string password = 2;
 }
 
-message gcLoginRet
+message scLoginRet
 {
 	int32 result = 1;
 }
 
-message cgLogout
+message csLogout
 {
 	
 }
 
-message gcLogoutRet
+message scLogoutRet
 {
 	int32 result = 1;
 }
 
-message cgEnterGame
+message csEnterGame
 {
 	int32 roleIndex = 1;
 }
 
-message gcEnterGameRet
+message scEnterGameRet
 {
 	int32 result = 1;
 }

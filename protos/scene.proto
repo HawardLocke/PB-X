@@ -1,17 +1,6 @@
 syntax = "proto3";
 
-package Lite.Protocol;
-
-
-message gcPlayerInfo
-{
-	int32 playerGuid = 1;
-	string name = 2;
-	int32 career = 3;
-	int32 level = 4;
-	float x = 5;
-	float y = 6;
-}
+package Protocol;
 
 
 message gcEnterScene
@@ -42,7 +31,7 @@ message gcOtherEnterScene
 
 message gcNearbyPlayerInfo
 {
-	repeated gcPlayerInfo playerInfoList = 1;
+	string fuck = 1;
 }
 
 message cgMoveTo
