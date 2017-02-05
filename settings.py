@@ -14,13 +14,13 @@ AUTO_COPY_FILE = True
 USE_PROTOBUF_NET = True
 
 # Generated c# files will be copied to this folder.
-CS_DEST_DIR = ['/../LiteServer/LiteServer/Source/Logic/Protocol/auto_gen/', '/../uLab/uLab/Assets/Scripts/Network/Protocol/auto_gen/']
+CS_DEST_DIR = ['/../LiteServer/LiteServer/Source/Logic/Protocol/auto_gen/']#, '/../uLab/uLab/Assets/Scripts/Network/Protocol/auto_gen/']
 
 # Generated lua files will be copied to this folder.
 LUA_DEST_DIR = '/../uLab/uLab/Assets/Lua/protocol/'
 
 # Generated javascript files will be copied to this folder.
-JS_DEST_DIR = ''
+JS_DEST_DIR = '/../LiteServer/IOClient/assets/scripts/protobuf/'
 
 # Generated python files will be copied to this folder.
 PY_DEST_DIR = ''

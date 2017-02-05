@@ -23,8 +23,10 @@ def gen_file(src_path, dst_path):
 	file_index = 0
 	os.chdir('.%s' % src)
 	for file_name in os.listdir(abs_src_path):
+		if file_name.find('.proto') <= 0:
+			continue
 		print('  %s' % file_name)
-		os.system('..\\protoc.exe //js_out=import_style=commonjs,binary:../%s %s' % (dst_path, file_name))
+		os.system('..\\protoc.exe --js_out=import_style=commonjs,binary:../%s %s' % (dst_path, file_name))
 		file_index = file_index + 1
 		id_index = file_index * settings.MAX_ID_COUNT_PER_FILE
 		msg_id_str = msg_id_str + '\n\t// %s\n' % file_name

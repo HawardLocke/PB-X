@@ -46,7 +46,7 @@ def copy_cs(abs_src_path,  abs_dst_path):
 	for file in os.listdir(abs_src_path):
 		sourceFile = os.path.join(abs_src_path,  file)
 		targetFile = os.path.join(abs_dst_path,  file)
-		if os.path.isfile(sourceFile) and sourceFile.find('.pb') > 0:
+		if os.path.isfile(sourceFile) and (sourceFile.find('.pb') > 0 or sourceFile.find('.lua') > 0):
 			open(targetFile, "wb").write(open(sourceFile, "rb").read())
 			print('  to %s' % targetFile)
 		elif os.path.isdir(sourceFile):
